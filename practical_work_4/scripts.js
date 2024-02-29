@@ -12,22 +12,22 @@ function MyMathPower(b, n) {
 }
 
 function MyMathPowerDefault1(b, n) {
-    b = b || 2;
-    n = n || 3;
+    b = b || 7;
+    n = n || 4;
     return MyMathPower(b, n);
 }
 
-function MyMathPowerDefault2(b = 2, n = 3) {
+function MyMathPowerDefault2(b = 7, n = 4) {
     return MyMathPower(b, n);
 }
 
 function TestAllFunctions() {
-    MyMathPowerDefault1(2, 5);
+    MyMathPowerDefault1(2, 6);
     MyMathPowerDefault1(4);
     MyMathPowerDefault1(null, 5);
-    MyMathPowerDefault1();
-    MyMathPowerDefault2(4, 2);
-    MyMathPowerDefault2(3);
+    MyMathPowerDefault1(7);
+    MyMathPowerDefault2(7, 2);
+    MyMathPowerDefault2(2);
     MyMathPowerDefault2(null, 3);
     MyMathPowerDefault2();
 }
