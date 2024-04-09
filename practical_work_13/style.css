@@ -1,0 +1,81 @@
+@font-face {
+    font-family: "Respublica";
+    src: url("Respublica.ttf");
+}
+*{
+    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+    user-select: none;
+}
+body { 
+    font-family: "Respublica";
+    background: url(/1639771419_1-catherineasquithgallery-com-p-nezhno-rozovie-oblaka-fon-2.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+h1 {
+    padding-top: 30px;
+    text-align: center;
+}
+#menu {
+    padding-top: 200px;
+    font-size: 28px;
+    text-align: center;
+    border-radius: 7px;
+}
+#level, #color {
+    padding: 0 5px;
+    font-size: 20px;
+    font-family: "Respublica";
+    color: blueviolet;
+    border-color: rgb(207, 157, 255);
+    border-radius: 7px;
+}
+#start {
+    padding: 0 5px;
+    font-size: 22px;
+    background-color: blueviolet;
+    color: rgb(207, 157, 255);
+    border-radius: 5px;
+    border-color: rgb(207, 157, 255);
+    font-family: "Respublica";
+}
+
+#game {
+    display: none;
+    font-size: 22px;
+}
+
+#player {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    user-select: none;
+}
+
+.player-icon {
+    width: 55px;
+    height: 50px;
+    display: none;
+    user-select: none;
+}
+
+.grey {
+    display: block;
+    user-select: none;
+}
+
+.purpule {
+    display: none;
+    user-select: none;
+}
+
+.blue {
+    display: none;
+    user-select: none;
+}
