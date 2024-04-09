@@ -18,6 +18,7 @@ function generateDiv() {
     div.style.backgroundColor = "red";
     div.style.width = width + "px";
     div.style.height = "30px";
+    div.style.position = "relative";
 
     let generatedDiv = document.getElementById("generatedDiv");
     generatedDiv.innerHTML = "";
@@ -26,15 +27,13 @@ function generateDiv() {
     document.getElementById("down").addEventListener("click", moveBlockDown);
      
     function moveBlockUp() {
-        let generatedDiv = document.getElementById("generatedDiv");
-        let currentPosition = parseInt(generatedDiv.style.top) || 0;
-        generatedDiv.style.top = (currentPosition - 20) + "px";
+        let currentPosition = parseInt(div.style.top) || 0;
+        div.style.top = (currentPosition - 20) + "px";
     }
     
     function moveBlockDown() {
-        let generatedDiv = document.getElementById("generatedDiv");
-        let currentPosition = parseInt(generatedDiv.style.top) || 0;
-        generatedDiv.style.top = (currentPosition + 20) + "px";
+        let currentPosition = parseInt(div.style.top) || 0;
+        div.style.top = (currentPosition + 20) + "px";
     }
 }
 
