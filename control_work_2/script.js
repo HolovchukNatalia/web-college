@@ -22,6 +22,8 @@ function generateDiv() {
     let generatedDiv = document.getElementById("generatedDiv");
     generatedDiv.innerHTML = "";
     generatedDiv.appendChild(div);
+    document.getElementById("top").addEventListener("click", moveBlockUp);
+    document.getElementById("down").addEventListener("click", moveBlockDown);
      
     function moveBlockUp() {
         let generatedDiv = document.getElementById("generatedDiv");
