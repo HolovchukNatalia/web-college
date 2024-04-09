@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>control_work</title>
+</head>
+<body>
+
+<h1>Контрольна робота №2 Головчук Наталя Василівна</h1>
+<h2>1 Варіант</h2>
+
+<div class="massif" id="massif"></div>
+
+<label for="widthSelect">Ширина:</label>
+<select name="shos-tam" id="widthSelect">
+    <option value="30">трыццаць</option>
+    <option value="50">пяцьдзесят</option>
+    <option value="70">семдзесят</option>
+</select>
+
+<button onclick="generateDiv()">Згенерувати</button>
+<div id="generatedDiv"></div>
+
+<div>
+    <button id="top" onclick="moveBlockUp()">Посунути уверх</button>
+    <button id="down" onclick="moveBlockDown()">Посунути вниз</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
